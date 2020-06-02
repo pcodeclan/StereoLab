@@ -17,5 +17,13 @@ public class Stereo {
         return radio;
     }
 
+    public RecordDeck getRecordDeck(){
+        return recordDeck;
+    }
+
+    public CDPlayer getCdPlayer(){
+        return cdPlayer;
+    }
+
 
 }
