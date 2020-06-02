@@ -1,21 +1,10 @@
-public class RecordDeck {
+public class RecordDeck extends Component{
 
-    private String make;
-    private String model;
     private int playSpeed;
 
     public RecordDeck(String make, String model){
-        this.make = make;
-        this.model = model;
+        super(make, model);
         this.playSpeed = 0;
-    }
-
-    public String getMake() {
-        return make;
-    }
-
-    public String getModel() {
-        return model;
     }
 
     public int getPlaySpeed() {

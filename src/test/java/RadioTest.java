@@ -9,7 +9,17 @@ public class RadioTest {
 
     @Before
     public void before(){
-        radio = new Radio();
+        radio = new Radio("Panasonic", "RB4");
+    }
+
+    @Test
+    public void canGetMake(){
+        assertEquals("Panasonic", radio.make);
+    }
+
+    @Test
+    public void canGetModel(){
+        assertEquals("RB4", radio.model);
     }
 
     @Test
